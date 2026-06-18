@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Search</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    helpjuice_account_url = 'https://product-help.interfolio.com';
+    helpjuice_contact_us_url = 'https://product-help.interfolio.com/contact-us';
+    helpjuiceSwiftySearchConfig = {
+      subdomain: 'interfolio',
+      themeColor: '#FFFFFF',
+      searchPlaceholder: 'Ask a question',
+      searchTextColor: '#000000',
+      searchEnableAI: true,
+      searchAskAiTitle: 'AI generated response',
+      searchAllowHighlighting: false,
+      recaptchaSiteKey: '6LfGBqAhAAAAAAPuWKP_CiwN2DWN3vofiYWl9iAN',
+      requireContactCaptcha: 'true',
+      searchEnableUsersFilter: false,
+    };
+  </script>
+  <script src='https://product-help.interfolio.com/swifty_search.js'></script>
+
+</body>
+</html>
